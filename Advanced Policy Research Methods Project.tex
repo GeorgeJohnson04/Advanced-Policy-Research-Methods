@@ -1,0 +1,154 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[margin=1.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb} 
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{subfig}
+\usepackage{kpfonts}    % for nice fonts
+\usepackage{microtype} 
+\usepackage{booktabs}   % for nice tables
+\usepackage{bm}         % for bold math
+\usepackage{listings}   % for inserting code
+\usepackage{verbatim}   % useful for program listings
+\usepackage{color}  
+\usepackage[colorlinks=true]{hyperref}
+\usepackage[colorinlistoftodos, textcolor = black]{todonotes}
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{url}
+\usepackage{hyperref}
+
+%Formatting
+    \doublespacing
+    \setlength {\marginparwidth }{2cm}
+
+%Article
+    \begin{document}
+
+%Title
+    \title{\textbf{Immigration: Crime Rate in the United States}}
+    \author{George Johnson\footnote{Economics B.S at University of Houston. Email: GtJohnso@cougarnet.uh.edu}}
+\date{December 5, 2024}
+\maketitle
+
+\newpage
+
+%Motivation
+\section*{Motivation and Previous Research}
+    \indent     How has immigration changed the crime rate in the United States? The answers to this    research question hold important implications for the future of immigration policy. For example, if immigration has a positive effect on the crime rate, meaning as immigration becomes more and more abundant, so does the crime rate, there may be implications for further restricting immigration. Otherwise, if the opposite is seen, there may be an incentive to allow for more open policies and fewer restrictions on immigration to the United States.
+    
+    \indent      A supporting paper looks at it on an international scale. Olivier Marie and Pablo Pinotti look at data throughout history to analyze the relation of crime rate and immigration on multiple studies. They utilize ordinary least squares to test these effects in multiple countries including the United States, United Kingdom, Italy, Chile, etc. They find that that when it comes to immigration excluding the United States, that immigrants produce more criminal activity in comparison to natives. This suggests a positive correlation, however other studies they conducted to measure immigration inflow effects on local crime rate on average do not show any detectable causal effect of immigration on local crime rates\footnote{\citep{M_P}}. Possible confounders here could be the fact they are measuring all crime instead of going on a specific crime basis. By analyzing specific crimes, it would be much easier to see where significance is held. The main take away from this paper however is this paper suggest the United States in comparison to others shows no correlation or even negative at times with the relation between crime rate and immigration. 
+    
+    \indent     Researchers have looked extensively into this data in just the United States alone as well, beginning with just studying the Mexico border state of Texas. Michael Light, Jingying He and Jason Robey conducted research comparing crime rates of undocumented immigrants, legal immigrants, and native-born Texas citizens. Their research holds significance here because it allows for a partial answer regarding undocumented immigrants on crime rates (in Texas). Their methods and data collection utilize data from the Texas Department of Public Safety, which allowed them to check records on immigration status of all those arrested throughout the state. Findings in Texas showed and represented that on average illegal immigrants will commit less crime. Other conclusions that could be drawn from this study were that the trend from 2012-2018 of arrests involving undocumented immigrants was stable or decreasing\footnote{\citep{L_J_J}}. Analyzing this research beyond their findings there are some confounders surrounding in this study. The main confounder here is that when it comes to undocumented immigrants they are not always held in the United States for their crimes. Another confounder is that it is unknown how many undocumented immigrants are in Texas in total, this can lead to skewed data because a per person analysis is not possible without these points. Where the study does succeed is in their data sources. By using official state departments, they were better able to estimate the data, however a perfect study in this case is near impossible.
+    
+    \indent     Mexican immigration has also been analyzed to test if there is an effect on crime rates in other United States cities. Aaron Chalfin in his study utilized the variation in Mexican fertility rates as evidence for his findings. He also implemented quasi-random identification in immigrant flows of specific countries that are predicted by the national flows of migrants to the United States. He implemented regression analysis to analyze data from the United States census of 1980, 1990, and 2000. The findings from his study when using Chicago, and Los Angeles as examples found that when it came to immigration over these census samples and the correlation on crime showed a 1 percentage point increase in immigration leads to a 13 percent reduction in rape, 11 percent reduction in larceny, and 15 percent reduction in grand theft auto. However, the study also showed that there was an increase in the rate of assault\footnote{\citep{C_Aaron}}. This study does hold some weight, however from the 1980’s to the 2000’s there was mass change especially in law and economics. This creates a confounder that cannot be ignored is that evolving policy and technological innovation could have influenced these crime rates at these taken times. The positive on the other hand is that the study was very in depth and took the steps to be done as quasi random so the results are not completely null and void, but con-founders should be 
+    acknowledged when using this data.
+   
+    \indent Scott Baker observed the effects of immigrant legalization on crime. His study implemented IRCA application and use the 1990 legalization summary tapes from the Immigration Naturalization Service. His findings show that since the implementation of the IRCA and legalization of immigration, crime has been declining. This assumption is from their provided data suggesting that it allows immigrants to get into better jobs providing for better living standards not requiring them to work in crime sector to make their wages\footnote{\citep{B_Scott}}. Some confounders with these findings however could be data bias, the organization he is using will want to look impactful so cherry picking on their side is possible. Despite this the study is conducted well and follows proper means suggesting that when immigrants become legal and can work crime rate decreases.
+    
+    \indent Aleman and Lozano analyze immigration enforcement and if it alters Mexican immigration demographic. Their methods include conducting an index by state overtime and use their interior enforcement index to take values between zero and three to measures immigration enforcement; three being heavily enforced zero being almost no enforcement. From this study they found that there were positive effects when it came to enforcement attracting higher quality immigrant workers. Along with this they also found that enforcement also brought about a negative correlation when it comes to crime and detention costs\footnote{\citep{O_G}}. This study may have some flaws when it comes to randomization of their selection, however as a whole the study is sound and strong when it comes to their findings and can be used for policy decisions in the future.
+    
+    \indent After reviewing these papers two competing theories can be seen those being that more immigrants increase  crime and the other being immigration does not increase crime. These two theories are directly opposite of each other and that is due to the number of con-founders that impact immigration and crime rate. From these confounders it can also be said that these theories do not fully answer the question since no perfect study has been conducted yet. Despite this, the paper that best represents this question from the review was Sandra Aleman and Heriberto Lozano paper on immigration enforcement and its effect on crime. 
+
+%Replication   
+\section{Replication}
+   
+    %Table 5
+ \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Table 5.png}
+     \caption{Migrants who stayed less than one year in the United States. \citep{O_G}}
+     \label{fig:5l}
+\end{figure}
+
+    \indent Aleman and  Lozano had the paper that best represented data immigration and its effect on crime that is the chosen paper to replicate for this study. From this paper I will be replicating table 5 and table 6 which both measure being an immigrant worker who has also worked a job. Table 5 measures those who have stayed less than one year in the U.S, while table 6 measures Migrants who stayed one year or more in the U.S.
+   
+    %Table 6
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Table 6.png}
+    \caption{Migrants who stayed a year or more in the United States.\citep{O_G} }
+    \label{fig:6l}
+\end{figure}
+
+    \indent I replicated these graphs by turning their STATA code into an R format. By doing this I was able to replicate the results near perfectly. There are slight variations due to the way STATA and R do round their regression tables. Since we were able to replicate the results we are able to say that this study was properly conducted and statistics are accurate. One item missing from the original studies tables are the statistical significances so we are now better to interpret that with the replication data.
+  
+    %Replication 5
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Table 5 Replication.png}
+    \caption{Replication of migrants who stayed less than one year in the United States. \citep{O_G}}
+    \label{fig:Table 5 Replication}
+\end{figure}
+
+    \indent From the replication table for table 5 it is shown that there is statistical significance when it comes to having a job and committing a crime or being detained. This means that migrants who have lived in the U.S. have a correlation of committing less crime and spending less time detained. The one measure from the original study where this is not significant is when an migrant is employed for less than 3 months.
+    
+
+    \indent From the replication table for table 6 it is shown that when it comes to having a job and committing a crime it is not always significant while when it comes to being detain significance remains. The levels we do see significance for holding a job and committing a crime s being employed less than four years, and being employed between 4 and 6 years. This means it can only be stated that when it comes to having a job and committing crime it is only significant when one is less than four years employed or between 4 and 6 years employed. Overall it can be stated that when it comes to being employed and being detained it holds significance at all levels measured from less than a year to ten plus years.
+    
+    %Replication 6
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Table 6 Replication.png}
+    \caption{Replication of migrants who stayed a year or more in the United States.\citep{O_G} }
+    \label{fig:Table 6 Replication}
+\end{figure}
+
+%Assumption Review
+\section{Assumption Review}
+
+    \indent There are six main assumptions that Aleman and Lozano make in their study. First, they assume that employment status impacts likelihood of a crime. Second, they say employment reduces the likelihood of being deported. Third, employment reduces the time spent in detention or prison. Fourth, the amount of time spent in the U.S moderates relationship between employment and criminal behavior. Fifth, survey is representative of the broader immigrant population in the U.S. Sixth and last, migrants have limited job mobility during their time spent in the U.S. By identifying these assumptions it allows us to state that the population of study in question are all immigrants living within the United States and how that changes the crime rare. Despite this we also recognize that there are flaws in their assumptions from this study.    
+
+    \indent When it comes to employment status impacting the likelihood of a crime it is plausible. Plausibility does not mean it is perfect however, this assumption heavily simplifies the complex relationship of a person and their relation to crime with unobserved factors such as mental health, social welfare, and the access to resources. These are all confounders that could change the outcome of what happens if one person commits a crime or not.
+
+    \indent Employment reduces the likelihood of being deported. This is a strong assumption that has other factors such as the amount of times interacted with law enforcement, legal status, or state level immigration policies. Some of these factors are hard to observe however but by mediating for some of these it may help reduce possible bias.
+
+    \indent The amount of time one spends in detention also has many factors. These factors include but are not limited to plea deals, severity of the crime, and ones legal representation. These confounders allow mean we cannot stat causality when it comes to this part of the study as well.
+
+    \indent The time spent in the U.S. moderates relationship between employment and criminal behavior is egregious since it has no other parameters. This assumption assumes homogeneity across populations, which ignores heterogeneity in culture, legal status, and the local community. This should not be an assumption since it is much too broad.
+
+    \indent Migrants having limited job mobility during their time spent may not hold universally. This is because job mobility also depends on the legal status and education level of a migrant. By not accounting for these factors massive bias could be seen in the regression models.
+
+    \indent The authors do state that their models do generalize a lot however no alternative models are introduced either. In order to fix this there are ways to reanalyze their data and increase the robustness of their models. By doing this we may get a more accurate representation of the correaltion between immigration and crime rate.
+    
+%Reanalysis
+\section{Reanalysis}
+        \indent There are a recommendations for have for assumptions that should be kept as well as some new assumptions that could be added. By introducing new assumptions and removing poor assumptions it allows for a better study. There are 4 new assumptions in total and I have kept 4 old ones for future research.
+        
+    \subsection{Kept Assumptions}
+            \indent Employment status impacts the likelihood of committing a crime. Again this assumptions is plausible but should be refined to recognize that employment interacts with other socioeconomic and legal factors. It has been kept since employment does provide financial stability and may deter criminal activity. The overall modified statement is, employment reduces the opportunity or incentive for economically motivated crimes.
+
+            \indent Employment reduces the likelihood of deportation. This assumption holds but can be expanded on to include how legal status moderates the relationship. Employment may reduce deportation likelihood but only if the individual has a work permit or is employed by something that does not require a lot of law enforcement interaction. The modified statement is, employment reduces the the likelihood of those who work legally or have limited law enforcement interaction.
+
+            \indent Employment reduces the time spent in detention or prison. This assumption is reasonable but could also consider additional factors. These factors include access to legal representation or the severity of the charge. This statement is modified to be, employment correlates with time in detention or prison, as individuals may be more likely to secure legal representation or access to plea deals.
+            
+            \indent Time spent in the U.S moderates the relationship between employment and criminal behavior. The assumption was originally poorly put and should definitely be modified to account for legal status, community demographic, with this effect deepening on acculturation, access to legal documentation, and access to social welfare systems
+            
+    \subsection{New Assumptions}
+            \indent Immigrant legal status affects the relationship between employment and criminal behavior. This is a valid assumption because legal status determines access to lawful employment, social welfare, and legal protection. These are all items that influence criminal behavior and likelihood of committing a crime.
+            
+            \indent Community and state-level factors shape employment and crime outcomes. State level policies, such as immigration enforcement intensity and labor market conditions significantly impact both employment opportunities and criminal behavior among immigrants. This assumption allows for data to be subset into a state by state case as well.
+
+            \indent Criminal behavior varies among immigrant subgroups. Immigrant populations are diverse and have variations in, education, cultural background, access to resources, and original region. These could all confound the study.
+
+            \indent Social networks mediate the employment and crime relationship. Immigrants will often utilize social media for job opportunity and support. These websites also can hold criminal activity or be scams which influence criminal behavior.
+    \subsection{Justification}
+            \indent By retaining plausible assumptions and adding new ones this revised framework does three things. Accounts for moderating and mediating factors like legal status, job quality, and social networks. Recognizes the role of the state and community context which vary across the United States. Acknowledges bias in data improving data credibility. Overall the refined framework provides more comprehensive lense to interpret the relationship of employment and crime in immigrant populations. 
+
+\section{Conclusion}
+        \indent In conclusion this is still a very debated and controversial topic. The two theories of immigrants increasing crime and immigrants not increasing crime are not specified enough. When it comes to these topics in future research I suggest taking much more subset-ed data. This will allow for better correlations and easier generality to be determined when it becomes subset-ed. I do not think the studies discussed are void however I just think more specification needs to be conducted before any policy actions can be determined from studying this relationship.
+\newpage
+\bibliographystyle{chicago}
+\bibliography{Citations}
+\citep{M_P}
+\citep{L_J_J}
+\citep{C_Aaron}
+\citep{B_Scott}
+\citep{O_G}
+\end{document}
