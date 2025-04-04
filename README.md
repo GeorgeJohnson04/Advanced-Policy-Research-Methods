@@ -48,7 +48,4 @@ The table below presents the estimated coefficients for crime and detention mode
 - **Model 7 and Model 8**: The results suggest that people with certain jobs or no employment are detained for longer periods. The analysis provides important insights into how labor market conditions impact detention duration.
 
 ## Reproducibility
-To replicate this analysis:
-1. Install the required R packages:
-   ```r
-   install.packages(c("fixest", "sandwich", "lmtest", "modelsummary", "haven"))
+Code is provided to replicate my replication and clean any data errors noticed
